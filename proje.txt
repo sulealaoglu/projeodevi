@@ -1,0 +1,568 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace PROJE
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Welcome!");
+            Console.WriteLine();
+            Console.WriteLine("This is a program that does calculations on the 3*3 matrix you will create.");
+            Console.WriteLine("Press enter to continue.");
+            Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine();
+            Console.Write("Firstly we need to create a matrix.Let's start with the first number in the first row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double a1 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Please enter a value for second column of the first row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double b1 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Please enter a value for third column of first row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double c1 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("The first row is completed.Please enter a value for first column the second row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double a2 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Please enter a value for second column of the second row : ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double b2 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + b2 + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Please enter a value for third column of the second row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double c2 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("The second row is completed.Please enter a value for first column the third row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double a3 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
+            Console.WriteLine("|" + a3 + " " + "-" + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Please enter a value for second column of the third row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double b3 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
+            Console.WriteLine("|" + a3 + " " + b3 + " " + "-" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Please enter a value for third column of third row: ");
+            Console.WriteLine("The matrix you entered: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            double c3 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
+            Console.WriteLine("|" + a3 + " " + b3 + " " + c3 + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+           
+            double rsum1 = a1 + b1 + c1;
+            double rsum2 = a2 + b2 + c2;
+            double rsum3 = a3 + b3 + c3;
+           
+            Console.WriteLine();
+            Console.WriteLine("The sums of values on each row of the matrix:");
+            Console.Write("First row:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(rsum1);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Second row:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(rsum2);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Third row:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(rsum3);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine();
+           
+            double csum1 = a1 + a2 + a3;
+            double csum2 = b1 + b2 + b3;
+            double csum3 = c1 + c2 + c3;
+            
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("The sums of values on each column of the matrix:");
+            Console.Write("First column:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(csum1);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Second column:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(csum2);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Third column:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(csum3);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine();
+            
+            double pdsum = a1 + b2 + c3;
+           
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Sum of the values on primary diagonal:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write(pdsum);
+            Console.WriteLine();
+            Console.WriteLine();
+            
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Transpose of the entered matrix:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + a2 + " " + a3 + "|");
+            Console.WriteLine("|" + b1 + " " + b2 + " " + b3 + "|");
+            Console.WriteLine("|" + c1 + " " + c2 + " " + c3 + "|");
+            
+            double x = a1 * b2 * c3;
+            double y = b1 * c2 * a3;
+            double z = c1 * a2 * b3;
+            double x1 = a3 * b2 * c1;
+            double y1 = b3 * c2 * a1;
+            double z1 = c3 * a2 * b1;
+            double determinant = (x + y + z) - (x1 + y1 + z1);
+           
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("The determinant of the matrix.");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"[({a1}*{b2}*{c3})");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("+");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"({b1}*{c2}*{a3})");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("+");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"({c1}*{a2}*{b3})]");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write(" - ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"[({a3}*{b2}*{c1})");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("+");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"[({b3}*{c2}*{a1})");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("+");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"[({c3}*{a2}*{b1})]");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write($"= {determinant}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+
+            bool Identity = false;
+            bool Scalar = false;
+            bool Diagonal = false;
+            bool zeroOne = false;
+
+            //identity
+            if (a1 == 1 && b2 == 1 && c3 == 1 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
+            {
+                Identity = true;
+                Console.Write("Idenity Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Yes");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            else
+            {
+                Console.Write("Idenity Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("No");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.WriteLine();
+
+            //Scalar
+            if (Identity==true && a1 == b2 && b2 == c3 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
+            {
+                Scalar = true;
+                Console.Write("Scalar Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Yes");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            else
+            {
+                Console.Write("Scalar Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("No");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.WriteLine();
+           
+            //diagonal
+            if (Scalar==true && a1 == b2 && b2 == c3 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
+            {
+                Diagonal = true;
+                Console.Write("Diagonal Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Yes");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            else
+            {
+                Console.Write("Diagonal Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("No");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.WriteLine();
+            
+            //zero-one
+            if (Diagonal==true && (a1 == 0 || a1 == 1) && (b1 == 0 || b1 == 1) && (c1 == 0 || c1 == 1) && (a2 == 0 || a2 == 1) && (b2 == 0 || b2 == 1) && (c2 == 0 || c2 == 1) && (a3 == 0 || a3 == 1) && (b3 == 0 || b3 == 1) && (c3 == 0 || c3 == 1))
+            {
+                zeroOne = true;
+                Console.Write("Zero-One Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Yes");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            else
+            {
+                Console.Write("Zero-One Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("No");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.WriteLine();
+            
+            //symetric
+            if (zeroOne==true && b1 == a2 && c1 == a3 && a2 == b1 && c2 == b3 && a3 == c1 && b3 == c2)
+            {
+                Console.Write("Symetric Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Yes");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            else
+            {
+                Console.Write("Symetric Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("No");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.WriteLine();
+           
+            //permutation
+            if (zeroOne==true && 
+               ((a1 == 1 && b1 == 0 && c1 == 0) && (a2 == 0 && b2 == 1 && c2 == 0) && (a3 == 0 && b3 == 0 && c3 == 1)) ||
+               ((a1 == 1 && b1 == 0 && c1 == 0) && (a2 == 0 && b2 == 0 && c2 == 1) && (a3 == 0 && b3 == 1 && c3 == 0)) ||
+               ((a1 == 0 && b1 == 1 && c1 == 0) && (a2 == 1 && b2 == 0 && c2 == 0) && (a3 == 0 && b3 == 0 && c3 == 1)) ||
+               ((a1 == 0 && b1 == 1 && c1 == 0) && (a2 == 0 && b2 == 0 && c2 == 1) && (a3 == 1 && b3 == 0 && c3 == 0)) ||
+               ((a1 == 0 && b1 == 0 && c1 == 1) && (a2 == 1 && b2 == 0 && c2 == 0) && (a3 == 0 && b3 == 1 && c3 == 0)) ||
+               ((a1 == 0 && b1 == 0 && c1 == 1) && (a2 == 0 && b2 == 1 && c2 == 0) && (a3 == 1 && b3 == 0 && c3 == 0)))
+            {
+                Console.Write("Permutation Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Yes");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            else
+            {
+                Console.Write("Permutation Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("No");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            //SATIRLARIN MİNİMUMLARI
+            double satır1Min = 0;
+            double satır2Min = 0;
+            double satır3Min = 0;
+            
+            Console.WriteLine();
+            Console.WriteLine();
+            if ((a1 <= b1) && (a1 <= c1))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of first row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(a1);
+                satır1Min = a1;
+            }
+            if ((b1 <= a1) && (b1 <= c1))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of first row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(b1);
+                satır1Min = b1;
+            }
+            if ((c1 <= a1) && (c1 <= b1))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of first row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(c1);
+                satır1Min = c1;
+            }
+            
+            
+            if ((a2 <= b2) && (a2 <= c2))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of second row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(a2);
+                satır2Min = a2;
+            }
+            if ((b2 <= a2) && (b2 <= c2))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of second row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(b2);
+                satır2Min = b2;
+            }
+            if ((c2 <= a2) && (c2 <= b2))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of second row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(c2);
+                satır2Min = c2;
+            }
+            
+            if ((a3 <= b3) && (a3 <= c3))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of third row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(a3);
+                satır3Min = a3;
+            }
+            if ((b3 <= a3) && (b3 <= c3))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of third row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(b3);
+                satır3Min = b3;
+            }
+            if ((c3 <= a3) && (c3 <= b3))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimum value of third row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(c3);
+                satır3Min = c3;
+            }
+
+            //KOLONLARIN MAXİMUMLARI  
+            double kolon1Max = 0;
+            double kolon2Max = 0;
+            double kolon3Max = 0;
+
+            Console.WriteLine();
+            if ((a2 <= a1) && (a3 <= a1))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of first column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(a1);
+                kolon1Max = a1;
+            }
+                
+            if ((a3 <= a2) && (a1 <= a2))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of first column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(a2);
+                kolon1Max = a2;
+            }
+                
+            if ((a1 <= a3) && (a2 <= a3))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of first column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(a3);
+                kolon1Max = a3;
+            }
+               
+
+
+            if ((b2 <= b1) && (b3 <= b1))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of second column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(b1);
+                kolon2Max = b1;
+            }
+            if ((b1 <= b2) && (b3 <= b2))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of second column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(b2);
+                kolon2Max = b2;
+            }
+            if ((b1 <= b3) && (b2 <= b3))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of second column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(b3);
+                kolon2Max = b3;
+            }
+           
+           
+            if ((c2 <= c1) && (c3 <= c1)) 
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of third column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(c1);
+                kolon3Max = c1;
+            }
+            if ((c1 <= c2) && (c3 <= c2)) 
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of third column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(c2);
+                kolon3Max = c2;
+
+            }
+            if ((c1 <= c3) && (c2 <= c3)) 
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of third column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(c3);
+                kolon3Max = c3;
+            }
+
+            Console.WriteLine();
+            //SATIR MİNLERİNİN EN BÜYÜĞÜ
+            double alfaSatır = 0;
+            if ((satır2Min <= satır1Min) && (satır3Min<=satır1Min))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of minimum values of each row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(satır1Min);
+                satır1Min = alfaSatır;
+            }
+
+            if ((satır1Min <= satır2Min) && (satır3Min <= satır2Min))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of minimum values of each row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(satır2Min);
+                satır2Min = alfaSatır;
+            }
+
+            if ((satır2Min <= satır3Min) && (satır1Min <= satır3Min))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The maximum value of minimum values of each row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(satır3Min);
+                satır3Min = alfaSatır;
+            }
+
+            //KOLON MAXLARININ EN KÜÇÜĞÜ
+            Console.WriteLine();
+            double alfaKolon = 0;
+            if ((kolon1Max <= kolon2Max) && (kolon1Max <= kolon3Max))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimun value of maximum values of each column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(kolon1Max);
+                kolon1Max = alfaKolon;
+            }
+
+            if ((kolon2Max <= kolon1Max) && (kolon2Max <= kolon3Max))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimun value of maximum values of each column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(kolon2Max);
+                kolon2Max = alfaKolon;
+            }
+
+            if ((kolon3Max <= kolon2Max) && (kolon3Max <= kolon1Max))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The minimun value of maximum values of each column: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(kolon3Max);
+                kolon3Max = alfaKolon;
+            }
+
+            //ALFALARIN KARŞILAŞTIRMASI
+            Console.WriteLine();
+            if (alfaSatır < alfaKolon)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.WriteLine("The minimun value of maximum values of each column is bigger than the maximum value of minimum values of each row");
+            }
+
+            if (alfaKolon < alfaSatır)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.WriteLine("The maximum value of minimum values of each row is bigger than the minimun value of maximum values of each column");
+            }
+
+            if (alfaKolon == alfaSatır)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("The maximum value of minimum values of each row is equal to the minimun value of maximum values of each column");
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}
