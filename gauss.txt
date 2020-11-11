@@ -1,0 +1,166 @@
+Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Below here you will be creating another matrix for gauss elimination method");
+            Console.ReadLine();
+            Console.WriteLine("Format of the gauss elimination matrix:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+            Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+            string password = "no";
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + "2" + " " + "1" + " " + "1" + " " + "9" + "|");
+            Console.WriteLine("|" + "2" + " " + "3" + " " + "7" + " " + "5" + "|");
+            Console.WriteLine("|" + "1" + " " + "0" + " " + "-2" + " " + "7.5" + "|");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Enter yes if you want the matrix above to be entered automatically.\nPress enter if you dont want to enter the matrix above :");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            password = Convert.ToString(Console.ReadLine());
+
+            if (password == "yes")
+            {
+                double a1Gauss = 2;
+                double b1Gauss = 1;
+                double c1Gauss = 1;
+                double a2Gauss = 2;
+                double b2Gauss = 3;
+                double c2Gauss = 7;
+                double a3Gauss = 1;
+                double b3Gauss = 0;
+                double c3Gauss = -2;
+                double d1 = 9;
+                double d2 = 5;
+                double d3 = 7.5;
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("The matrix you entered for gauss elimination method : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + a3Gauss + " " + b3Gauss + " " + c3Gauss + " " + d3 + "|");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+
+
+
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine();
+                Console.Write("Please enter a value for first number of the first row : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double a1Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for second number of the first row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double b1Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for third number of first row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double c1Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for first rows constant : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double d1 = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The first row is completed.Please enter a value for first number the second row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double a2Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for second number of the second row : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double b2Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for third number of the second row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double c2Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + "-" + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for second rows constant  : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double d2 = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("The second row is completed.Please enter a value for first number the third row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double a3Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + a3Gauss + " " + "-" + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for second number of the third row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double b3Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + a3Gauss + " " + b3Gauss + " " + "-" + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for third number of third row: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double c3Gauss = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + a3Gauss + " " + b3Gauss + " " + c3Gauss + " " + "-" + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Please enter a value for third rows constant : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                double d3 = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + a3Gauss + " " + b3Gauss + " " + c3Gauss + " " + d3 + "|");
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("The matrix you entered for gauss elimination method : ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("|" + a1Gauss + " " + b1Gauss + " " + c1Gauss + " " + d1 + "|");
+                Console.WriteLine("|" + a2Gauss + " " + b2Gauss + " " + c2Gauss + " " + d2 + "|");
+                Console.WriteLine("|" + a3Gauss + " " + b3Gauss + " " + c3Gauss + " " + d3 + "|");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
