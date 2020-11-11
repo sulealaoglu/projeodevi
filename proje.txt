@@ -86,9 +86,10 @@ namespace PROJE
             Console.WriteLine("|" + a3 + " " + b3 + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write("Please enter a value for third column of third row: ");
-            Console.WriteLine("The matrix you entered: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double c3 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("The matrix you entered: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
             Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
