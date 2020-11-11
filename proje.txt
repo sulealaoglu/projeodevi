@@ -29,7 +29,7 @@ namespace PROJE
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Please enter a value for second column of the first row: ");
+            Console.Write("Please enter a value for second number of the first row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double b1 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -37,7 +37,7 @@ namespace PROJE
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Please enter a value for third column of first row: ");
+            Console.Write("Please enter a value for third number of first row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double c1 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -45,7 +45,7 @@ namespace PROJE
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("The first row is completed.Please enter a value for first column the second row: ");
+            Console.Write("The first row is completed.Please enter a value for first number the second row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double a2 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -53,7 +53,7 @@ namespace PROJE
             Console.WriteLine("|" + a2 + " " + "-" + " " + "-" + "|");
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Please enter a value for second column of the second row : ");
+            Console.Write("Please enter a value for second number of the second row : ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double b2 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -61,7 +61,7 @@ namespace PROJE
             Console.WriteLine("|" + a2 + " " + b2 + " " + "-" + "|");
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Please enter a value for third column of the second row: ");
+            Console.Write("Please enter a value for third number of the second row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double c2 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -69,7 +69,7 @@ namespace PROJE
             Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
             Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("The second row is completed.Please enter a value for first column the third row: ");
+            Console.Write("The second row is completed.Please enter a value for first number the third row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double a3 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -77,7 +77,7 @@ namespace PROJE
             Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
             Console.WriteLine("|" + a3 + " " + "-" + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Please enter a value for second column of the third row: ");
+            Console.Write("Please enter a value for second number of the third row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double b3 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -85,7 +85,7 @@ namespace PROJE
             Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
             Console.WriteLine("|" + a3 + " " + b3 + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Please enter a value for third column of third row: ");
+            Console.Write("Please enter a value for third number of third row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double c3 = Convert.ToDouble(Console.ReadLine());
             Console.ForegroundColor = ConsoleColor.DarkGray;
