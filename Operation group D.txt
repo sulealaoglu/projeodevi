@@ -1,5 +1,5 @@
-Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("Below here you will be creating another matrix for gauss elimination method");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Below here you will be creating another matrix for gauss elimination method\nPress enter to continue");
             Console.ReadLine();
             Console.WriteLine("Format of the gauss elimination matrix:");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -14,24 +14,37 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("|" + "2" + " " + "3" + " " + "7" + " " + "5" + "|");
             Console.WriteLine("|" + "1" + " " + "0" + " " + "-2" + " " + "7.5" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Enter yes if you want the matrix above to be entered automatically.\nPress enter if you dont want to enter the matrix above :");
+            Console.Write("Enter yes if you want the matrix above to be entered automatically.\nPress enter if you dont want to enter the matrix above(Converting to row echelon wont work):");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             password = Convert.ToString(Console.ReadLine());
 
+            double x1 = 0;
+            double y1 = 0;
+            double z1 = 0;
+            double x2 = 0;
+            double y2 = 0;
+            double z2 = 0;
+            double x3 = 0;
+            double y3 = 0;
+            double z3 = 0;
+            double t1 = 0;
+            double t2 = 0;
+            double t3 = 0;
+
             if (password == "yes")
             {
-                double x1 = 2;
-                double y1 = 1;
-                double z1 = 1;
-                double x2 = 2;
-                double y2 = 3;
-                double z2 = 7;
-                double x3 = 1;
-                double y3 = 0;
-                double z3 = -2;
-                double t1 = 9;
-                double t2 = 5;
-                double t3 = 7.5;
+                x1 = 2;
+                y1 = 1;
+                z1 = 1;
+                x2 = 2;
+                y2 = 3;
+                z2 = 7;
+                x3 = 1;
+                y3 = 0;
+                z3 = -2;
+                t1 = 9;
+                t2 = 5;
+                t3 = 7.5;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine("The matrix you entered for gauss elimination method : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -53,7 +66,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine();
                 Console.Write("Please enter a value for first number of the first row : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double x1 = Convert.ToDouble(Console.ReadLine());
+                x1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + "-" + " " + "-" + " " + "-" + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
@@ -62,7 +75,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second number of the first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double y1 = Convert.ToDouble(Console.ReadLine());
+                y1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + "-" + " " + "-" + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
@@ -71,7 +84,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third number of first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double z1 = Convert.ToDouble(Console.ReadLine());
+                z1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + "-" + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
@@ -80,7 +93,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for first rows constant : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double t1 = Convert.ToDouble(Console.ReadLine());
+                t1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
@@ -89,7 +102,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("The first row is completed.Please enter a value for first number the second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double x2 = Convert.ToDouble(Console.ReadLine());
+                x2 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + "-" + " " + "-" + " " + "-" + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + " " + "-" + "|");
@@ -97,7 +110,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second number of the second row : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double y2 = Convert.ToDouble(Console.ReadLine());
+                y2 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + "-" + " " + "-" + "|");
@@ -106,7 +119,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third number of the second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double z2 = Convert.ToDouble(Console.ReadLine());
+                z2 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + "-" + "|");
@@ -115,7 +128,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second rows constant  : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double t2 = Convert.ToDouble(Console.ReadLine());
+                t2 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -124,7 +137,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("The second row is completed.Please enter a value for first number the third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double x3 = Convert.ToDouble(Console.ReadLine());
+                x3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -133,7 +146,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second number of the third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double y3 = Convert.ToDouble(Console.ReadLine());
+                y3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -142,7 +155,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third number of third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double z3 = Convert.ToDouble(Console.ReadLine());
+                z3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -151,7 +164,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third rows constant : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                double t3 = Convert.ToDouble(Console.ReadLine());
+                t3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -164,3 +177,143 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
                 Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Conversion of matrix to row echelon step by step:");
+            Console.WriteLine();
+
+            //step 1:r1/2 ->r1
+            x1 = x1 / 2;
+            y1 = y1 / 2;
+            z1 = z1 / 2;
+            t1 = t1 / 2;
+            Console.WriteLine("1. step is to multiple 1st row by 0.5");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step2:r2-2*r1 ->r2
+            x2 = x2 - 2 * x1;
+            y2 = y2 - 2 * y1;
+            z2 = z2 - 2 * z1;
+            t2 = t2 - 2 * t1;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("2. step:Substract 2 times of 1st row from 2nd row");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step3:r3-r1->r3
+            x3 = x3 - x1;
+            y3 = y3 - y1;
+            z3 = z3 - z1;
+            t3 = t3 - t1;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("3. step:Substract 3rd row from 1st row");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step4:r2/2->r2
+            x2 = x2 * 0.5;
+            y2 = y2 * 0.5;
+            z2 = z2 * 0.5;
+            t2 = t2 * 0.5;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("4. step:Multiple 2nd row by 0.5");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step5:r1-0.5*r2->r1
+            x1 = x1 - 0.5 * x2;
+            y1 = y1 - 0.5 * y2;
+            z1 = z1 - 0.5 * z2;
+            t1 = t1 - 0.5 * t2;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("5. step:Substract 2 times of 2nd row from 1st row");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step6:r3+r2*0.5->r3
+            x3 = x3 + x2 * 0.5;
+            y3 = y3 + y2 * 0.5;
+            z3 = z3 + z2 * 0.5;
+            t3 = t3 + t2 * 0.5;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("6. step:Add 2 times of 2nd row to 3rd row");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step7:r3/-1->r3
+            x3 = x3 / (-1);
+            y3 = y3 / (-1);
+            z3 = z3 / (-1);
+            t3 = t3 / (-1);
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("7. step:Divide 3rd row by -1");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step8:r1+r3->r1
+            x1 = x1 + x3;
+            y1 = y1 + y3;
+            z1 = z1 + z3;
+            t1 = t1 + t3;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("8. step:Add 3rd row to 1st row");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            //step9:r2-3*r3->r2
+            x2 = x2 - 3 * x3;
+            y2 = y2 - 3 * y3;
+            z2 = z2 - 3 * z3;
+            t2 = t2 - 3 * t3;
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("9. step:Substract 3 times of 3rd row from 2nd row");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine($"Value of x={t1} y={t2} z={t3}.");
